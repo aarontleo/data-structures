@@ -15,6 +15,8 @@ Time Complexity:
 Space Complexity - O(n) , constant
 */
 
+import java.util.Arrays;
+
 public class Queue {
     int front, rear;
     int size = 0;
@@ -63,6 +65,22 @@ public class Queue {
 
     public boolean isEmpty() {
         return front == -1 ? true : false;
+    }
+
+    public int peek() {
+        System.out.println("Front Element is: " + queueArray[front]);
+        return queueArray[front];
+    }
+
+    public void display() {
+        System.out.println("------------------");
+        if (isEmpty()) {
+            System.out.println("Empty Queue!");
+        } else {
+            System.out.println("Queue Elements -> " + Arrays.toString(queueArray));
+        }
+        System.out.println("Front Element: " + queueArray[front]);
+        System.out.println("Rear Element: " + queueArray[rear]);
     }
 
 
