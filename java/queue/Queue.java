@@ -58,19 +58,11 @@ public class Queue {
     }
 
     public boolean isFull() {
-        if (size == capacity) {
-            return true;
-        } else {
-            return false;
-        }
+        return size == capacity ? true : false;
     }
 
     public boolean isEmpty() {
-        if (front == -1) {
-            return true;
-        } else {
-            return false;
-        }
+        return front == -1 ? true : false;
     }
 
 
